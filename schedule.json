@@ -1,14 +1,4 @@
 {
   "timezone": "Europe/Paris",
-  "posts": [
-    {
-      "id": "2026-12-31-essai-technique",
-      "titre": "essai technique",
-      "type": "reel",
-      "video": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-12-31-essai-technique.mp4",
-      "caption": "Essai technique",
-      "quand": "2026-12-31T12:00",
-      "statut": "planifie"
-    }
-  ]
+  "posts": []
 }
