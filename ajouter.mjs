@@ -17,9 +17,10 @@ const git = (...a) => execFileSync('git', a, { cwd: ICI, encoding: 'utf8' }).tri
 const lire = () => JSON.parse(readFileSync(SCHED, 'utf8'));
 const ecrire = (s) => writeFileSync(SCHED, JSON.stringify(s, null, 2) + '\n');
 const pousser = (msg) => {
-  git('pull', '--rebase', '-q', 'origin', 'main');
+  // commit d'abord : un pull --rebase refuse un dossier de travail modifie
   git('add', '-A');
   git('commit', '-q', '-m', msg);
+  git('pull', '--rebase', '-q', 'origin', 'main');
   git('push', '-q', 'origin', 'main');
 };
 
