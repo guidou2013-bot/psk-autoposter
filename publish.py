@@ -106,13 +106,34 @@ def fb_story(page_id, p, est_video):
     return r.get("post_id") or ph["id"]
 
 
+def expiration():
+    """29/09 : le 1er jeton pose etait un jeton COURT (expire le soir meme). On lit sa date de fin
+    (debug_token accepte le jeton lui-meme comme access_token). 0 = n'expire jamais."""
+    try:
+        d = api("GET", "debug_token", token=SYS_TOKEN, input_token=SYS_TOKEN).get("data", {})
+        return int(d.get("expires_at") or 0), d.get("type", "?")
+    except Exception as e:
+        return None, str(e)[:120]
+
+
 def main():
     if not SYS_TOKEN:
         print("META_PAGE_TOKEN absent : rien a faire tant que le jeton PSK n'est pas pose.")
         return
     page, ig_id = resolve()
     print(f"Page: {page['name']} ({page['id']}) | Instagram lie: {ig_id or 'NON LIE'}")
+    fin, typ = expiration()
+    if fin == 0:
+        print(f"Jeton {typ} : n'expire jamais")
+    elif fin:
+        reste = datetime.fromtimestamp(fin, ZoneInfo("Europe/Paris"))
+        print(f"Jeton {typ} : expire le {reste:%d/%m/%Y %H:%M}")
+        maint = datetime.now(ZoneInfo("Europe/Paris"))
+        # une alerte par jour (passage de 9h) et pas toutes les 30 min
+        if reste - maint < timedelta(days=7) and maint.hour == 9 and maint.minute < 30:
+            BILAN.append(f"ATTENTION : le jeton Meta PSK expire le {reste:%d/%m %H:%M}, a renouveler")
     if os.environ.get("CHECK_ONLY") == "1":
+        BILAN.append("Jeton : " + ("n'expire jamais" if fin == 0 else f"expire le {datetime.fromtimestamp(fin, ZoneInfo('Europe/Paris')):%d/%m/%Y}" if fin else "date inconnue"))
         sp = api("GET", f"{page['id']}/scheduled_posts", fields="id,scheduled_publish_time")
         print(f"Posts deja programmes sur la Page (Business Suite compris) : {len(sp.get('data', []))}")
         if ig_id:
