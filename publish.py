@@ -36,9 +36,15 @@ def api(method, path, token=None, **params):
 
 def resolve():
     global PAGE_TOKEN
-    pages = api("GET", "me/accounts", token=SYS_TOKEN,
-                fields="id,name,access_token,instagram_business_account")
-    data = pages.get("data", [])
+    try:
+        pages = api("GET", "me/accounts", token=SYS_TOKEN,
+                    fields="id,name,access_token,instagram_business_account")
+        data = pages.get("data", [])
+    except RuntimeError as e:
+        # 29/09 : sur un token de Page, me/accounts repond une erreur (#100) au lieu d'une liste vide
+        if "code\":190" in str(e).replace(" ", ""):
+            raise
+        data = []
     if not data:
         # Token de Page directement (pas d'utilisateur systeme) : me = la Page
         me = api("GET", "me", token=SYS_TOKEN, fields="id,name,instagram_business_account")
