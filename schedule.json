@@ -33,7 +33,9 @@
       "caption": "C'est Halloween : les déguisements sont les bienvenus samedi.\nGirls in da Mix, Mainvilliers, de 20h à 2h.\nPrévente 15 € : https://www.helloasso.com/associations/psykotik-sound-kartel/evenements/girls-on-decks\nAvec @beyondre.101 @inesauffray @josyfullvibes @solar_wav et @lapin_mc au live mapping.\n#girlsindamix #psk #halloween #mainvilliers",
       "caption_fb": "C'est Halloween : les déguisements sont les bienvenus samedi.\nGirls in da Mix, Mainvilliers, de 20h à 2h.\nPrévente 15 € : https://www.helloasso.com/associations/psykotik-sound-kartel/evenements/girls-on-decks\n#girlsindamix #psk #halloween #mainvilliers",
       "quand": "2026-10-29T18:30",
-      "statut": "planifie"
+      "statut": "partiel",
+      "fb_post_id": "2590873694717756",
+      "fb_done": true
     },
     {
       "id": "2026-10-30-gidm-g12-demain",
@@ -148,10 +150,12 @@
       "video": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-10-01-06-ghana-sound-system.mp4",
       "caption": "Ghana Sound System (@ghanasoundsystem) ouvre la soirée du 10 octobre en dub reggae, 100% live.\nSalle André Malraux à Luisant, dès 20h, au profit des Restos du Cœur. 10 € en prévente, 15 € sur place.\nAvant le sound system : ateliers et boum des enfants dès 16h30 (entrée libre, collecte de denrées alimentaires et de jouets neufs).\n👉 Toutes les infos sur l'évènement Facebook PSK.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
       "quand": "2026-10-01T18:30",
-      "statut": "partiel",
+      "statut": "publie",
       "caption_fb": "Ghana Sound System ouvre la soirée du 10 octobre en dub reggae, 100% live.\nSalle André Malraux à Luisant, dès 20h, au profit des Restos du Cœur. 10 € en prévente, 15 € sur place.\nAvant le sound system : ateliers et boum des enfants dès 16h30 (entrée libre, collecte de denrées alimentaires et de jouets neufs).\n👉 Toutes les infos sur l'évènement Facebook PSK.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
       "fb_post_id": "1658615472347816",
-      "fb_done": true
+      "fb_done": true,
+      "ig_media_id": "18100790864642837",
+      "ig_done": true
     },
     {
       "id": "2026-10-02-11-itook",
