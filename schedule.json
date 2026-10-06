@@ -224,10 +224,12 @@
       "video": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-10-06-02-que-du-live.mp4",
       "caption": "Que du live, aucune playlist : le 10 octobre, tout se joue en direct.\nSalle André Malraux à Luisant, dès 20h, pour une soirée 100% live au profit des Restos du Cœur.\nAvant ça, ateliers et boum des enfants dès 16h30 (entrée libre, collecte de denrées alimentaires et de jouets neufs).\n👉 Toutes les infos sur l'évènement Facebook PSK.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
       "quand": "2026-10-06T18:30",
-      "statut": "partiel",
+      "statut": "publie",
       "caption_fb": "Que du live, aucune playlist : le 10 octobre, tout se joue en direct.\nSalle André Malraux à Luisant, dès 20h, pour une soirée 100% live au profit des Restos du Cœur.\nAvant ça, ateliers et boum des enfants dès 16h30 (entrée libre, collecte de denrées alimentaires et de jouets neufs).\n👉 Toutes les infos sur l'évènement Facebook PSK.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
       "fb_post_id": "4070643703237690",
-      "fb_done": true
+      "fb_done": true,
+      "ig_media_id": "18492481099104492",
+      "ig_done": true
     },
     {
       "id": "2026-10-07-09-la-journee",
