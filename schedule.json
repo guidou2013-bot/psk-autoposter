@@ -302,8 +302,12 @@
       "image": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-10-09-100-live-c-est-demain-post.jpg",
       "caption": "C'est demain ! 100% LIVE, les Technos du Cœur, avec les Restos du Cœur.\nSamedi 10 octobre, salle André Malraux à Luisant :\n16h30 ateliers (DJ, MAO, graffiti), 18h30 boum des enfants en entrée libre, 20h sound system 100% live.\nSoirée 10 € en prévente, 15 € sur place. Apportez des denrées alimentaires et des jouets neufs : tout va aux Restos du Cœur.\nAvec @ghanasoundsystem @itook303 @eliothstroebel @lombrikor et AG 799.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
       "quand": "2026-10-09T10:30",
-      "statut": "planifie",
-      "caption_fb": "C'est demain ! 100% LIVE, les Technos du Cœur, avec les Restos du Cœur.\nSamedi 10 octobre, salle André Malraux à Luisant :\n16h30 ateliers (DJ, MAO, graffiti), 18h30 boum des enfants en entrée libre, 20h sound system 100% live.\nSoirée 10 € en prévente, 15 € sur place. Apportez des denrées alimentaires et des jouets neufs : tout va aux Restos du Cœur.\nAvec Ghana Sound System, Itook, Inspektor Nès, Lombrikor et AG 799.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur"
+      "statut": "publie",
+      "caption_fb": "C'est demain ! 100% LIVE, les Technos du Cœur, avec les Restos du Cœur.\nSamedi 10 octobre, salle André Malraux à Luisant :\n16h30 ateliers (DJ, MAO, graffiti), 18h30 boum des enfants en entrée libre, 20h sound system 100% live.\nSoirée 10 € en prévente, 15 € sur place. Apportez des denrées alimentaires et des jouets neufs : tout va aux Restos du Cœur.\nAvec Ghana Sound System, Itook, Inspektor Nès, Lombrikor et AG 799.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
+      "fb_post_id": "196291543756293_1530033299168765",
+      "fb_done": true,
+      "ig_media_id": "18134090704661247",
+      "ig_done": true
     },
     {
       "id": "2026-10-09-100-live-story-c-est-demain",
@@ -312,7 +316,11 @@
       "image": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-10-09-100-live-story-c-est-demain.jpg",
       "caption": "",
       "quand": "2026-10-09T10:30",
-      "statut": "planifie"
+      "statut": "publie",
+      "fb_post_id": "3305108443011065",
+      "fb_done": true,
+      "ig_media_id": "18093146930457101",
+      "ig_done": true
     }
   ]
 }
