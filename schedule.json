@@ -294,10 +294,12 @@
       "video": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-10-10-20-dub-ou-tekno.mp4",
       "caption": "Dub ou tekno ? Ce soir à Luisant, les deux se jouent 100% live.\nSalle André Malraux, dès 20h, au profit des Restos du Cœur. 10 € en prévente, 15 € sur place.\nAvant ça : ateliers et boum des enfants dès 16h30 (entrée libre, collecte de denrées alimentaires et de jouets neufs).\n👉 Toutes les infos sur l'évènement Facebook PSK.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
       "quand": "2026-10-10T15:00",
-      "statut": "partiel",
+      "statut": "publie",
       "caption_fb": "Dub ou tekno ? Ce soir à Luisant, les deux se jouent 100% live.\nSalle André Malraux, dès 20h, au profit des Restos du Cœur. 10 € en prévente, 15 € sur place.\nAvant ça : ateliers et boum des enfants dès 16h30 (entrée libre, collecte de denrées alimentaires et de jouets neufs).\n👉 Toutes les infos sur l'évènement Facebook PSK.\n#PSK #100PourcentLive #Luisant #Chartres #RestosDuCoeur",
       "fb_post_id": "2016308196424330",
-      "fb_done": true
+      "fb_done": true,
+      "ig_media_id": "17968606584163592",
+      "ig_done": true
     },
     {
       "id": "2026-10-09-100-live-c-est-demain-post",
