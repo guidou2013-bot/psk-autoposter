@@ -124,7 +124,11 @@
       "image": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-10-28-gidm-story-j-3.jpg",
       "caption": "",
       "quand": "2026-10-28T11:00",
-      "statut": "planifie"
+      "statut": "publie",
+      "fb_post_id": "978986431394557",
+      "fb_done": true,
+      "ig_media_id": "18122047259514399",
+      "ig_done": true
     },
     {
       "id": "2026-10-29-gidm-story-j-2",
