@@ -167,7 +167,11 @@
       "image": "https://guidou2013-bot.github.io/psk-autoposter/media/2026-10-31-gidm-story-j-0.jpg",
       "caption": "",
       "quand": "2026-10-31T11:00",
-      "statut": "planifie"
+      "statut": "publie",
+      "fb_post_id": "1427458486187616",
+      "fb_done": true,
+      "ig_media_id": "18062463815798022",
+      "ig_done": true
     },
     {
       "id": "2026-09-30-01-3-2-1-tekno",
