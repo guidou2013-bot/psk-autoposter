@@ -156,6 +156,19 @@ def main():
     for p in sched["posts"]:
         quand = datetime.fromisoformat(p["quand"]).replace(tzinfo=tz)
         st = p.get("statut", "planifie")
+        # ANNULATION (19/11/2026) : un post retire alors que Facebook l'avait deja programme
+        # nativement est supprime chez Meta, sinon il partirait quand meme a l'heure dite.
+        if st == "annule" and p.get("fb_done") and p.get("fb_post_id") and not p.get("fb_supprime") \
+                and p.get("type") != "story" and quand > now and not DRY:
+            try:
+                api("POST", str(p["fb_post_id"]), method="delete")
+                p["fb_supprime"] = True
+                p.pop("fb_error", None)
+                print(f"FB supprime {p['id']}"); changed += 1
+                BILAN.append(f"Facebook : programmation supprimee ({p.get('titre', p['id'])})")
+            except Exception as e:
+                p["fb_error"] = str(e)[:300]; print(f"FB SUPPRESSION ERREUR {p['id']}: {p['fb_error']}")
+                BILAN.append(f"ERREUR : la programmation Facebook de {p.get('titre', p['id'])} n'a PAS pu etre supprimee, a retirer dans Business Suite : {p['fb_error'][:150]}")
         if st not in ("planifie", "partiel"):
             continue
         lead = quand - now
