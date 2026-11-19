@@ -26,6 +26,7 @@ def api(method, path, token=None, **params):
     data = urllib.parse.urlencode(params).encode()
     url = f"{GRAPH}/{path}"
     req = urllib.request.Request(f"{url}?{data.decode()}") if method == "GET" \
+        else urllib.request.Request(f"{url}?{data.decode()}", method="DELETE") if method == "DELETE" \
         else urllib.request.Request(url, data=data, method="POST")
     try:
         with urllib.request.urlopen(req, timeout=120) as r:
@@ -161,7 +162,7 @@ def main():
         if st == "annule" and p.get("fb_done") and p.get("fb_post_id") and not p.get("fb_supprime") \
                 and p.get("type") != "story" and quand > now and not DRY:
             try:
-                api("POST", str(p["fb_post_id"]), method="delete")
+                api("DELETE", str(p["fb_post_id"]))
                 p["fb_supprime"] = True
                 p.pop("fb_error", None)
                 print(f"FB supprime {p['id']}"); changed += 1
