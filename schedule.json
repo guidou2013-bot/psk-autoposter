@@ -380,7 +380,8 @@
       "statut": "annule",
       "caption_fb": "PSK @ Aéronef, vendredi 18 décembre à Chartres.\nSoirée caritative pour le Foyer d'Accueil Chartrain, de la psytrance à la tekno, avec Mental Work (CMSF) en guest.\n20h30 - 1h, prix libre, 12 rue Hubert Latham.\nPensez à apporter un jouet neuf : la collecte est pour les enfants du foyer.\nLa solidarité aussi fait partie de la fête ❤️\n#PSK #Chartres #Tekno #Psytrance #SoireeCaritative",
       "fb_post_id": "1609842377099366",
-      "fb_done": true
+      "fb_done": true,
+      "fb_error": "api() got multiple values for argument 'method'"
     }
   ]
 }
